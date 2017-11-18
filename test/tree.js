@@ -55,3 +55,19 @@ exports['add word twice'] = function (test) {
 	test.ok(words.f.o.o.$);
 }
 
+exports['add two words'] = function (test) {
+	var tree = mh.tree();
+	tree.add('foo')
+		.add('four');
+	
+	var words = tree.words();
+	
+	test.ok(words);
+	test.ok(words.f);
+	test.ok(words.f.o);
+	test.ok(words.f.o.o);
+	test.ok(words.f.o.o.$);
+	test.ok(words.f.o.u);
+	test.ok(words.f.o.u.r);
+	test.ok(words.f.o.u.r.$);
+}
