@@ -16,7 +16,9 @@ TBD
 
 ## References
 
-TBD
+- [The Free Dictionary](https://www.thefreedictionary.com)
+- [Wiktionary](https://en.wiktionary.org)
+- [Yawl Project, List of Words](http://www.gtoal.com/scrabble/yawl/)
 
 ## Samples
 
