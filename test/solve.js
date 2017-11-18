@@ -30,6 +30,15 @@ exports['solve two words returning one word'] = function (test) {
 	test.equal(result[0], 'maps');
 }
 
+exports['solve two words no result'] = function (test) {
+	var tree = mh.tree().add(['maps', 'foo']);
+	
+	var result = tree.solve(['p', 'a', 'm']);
+	
+	test.ok(result);
+	test.equal(result.length, 0);
+}
+
 exports['solve two words returning two words'] = function (test) {
 	var tree = mh.tree().add(['maps', 'spam']);
 	
