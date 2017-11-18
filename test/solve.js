@@ -48,6 +48,16 @@ exports['solve two similar words no result'] = function (test) {
 	test.equal(result.length, 0);
 }
 
+exports['solve word using less letters'] = function (test) {
+	var tree = mh.tree().add(['bar', 'barrister']);
+	
+	var result = tree.solve(['b', 'a', 'r', 'i']);
+	
+	test.ok(result);
+	test.equal(result.length, 1);
+	test.equal(result[0], 'bar');
+}
+
 exports['solve two words returning two words'] = function (test) {
 	var tree = mh.tree().add(['maps', 'spam']);
 	
