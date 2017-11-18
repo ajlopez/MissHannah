@@ -28,3 +28,16 @@ exports['initial word'] = function (test) {
 	test.ok(words.m.a.n.$);
 }
 
+exports['add word'] = function (test) {
+	var tree = mh.tree();
+	tree.add('foo');
+	
+	var words = tree.words();
+	
+	test.ok(words);
+	test.ok(words.f);
+	test.ok(words.f.o);
+	test.ok(words.f.o.o);
+	test.ok(words.f.o.o.$);
+}
+
