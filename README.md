@@ -1,6 +1,6 @@
 # MissHannah
 
-Wordical solver.
+Wordical solver, inspired by my lovely English teacher, MIss Hannah.
 
 ## Installation
 
