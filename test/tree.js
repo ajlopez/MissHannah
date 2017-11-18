@@ -17,3 +17,14 @@ exports['no words'] = function (test) {
 	test.equal(Object.keys(words).length, 0);
 }
 
+exports['initial word'] = function (test) {
+	var tree = mh.tree({ 'm': { 'a': { 'n': { '$': {} } } } });
+	var words = tree.words();
+	
+	test.ok(words);
+	test.ok(words.m);
+	test.ok(words.m.a);
+	test.ok(words.m.a.n);
+	test.ok(words.m.a.n.$);
+}
+
