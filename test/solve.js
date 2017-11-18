@@ -39,6 +39,15 @@ exports['solve two words no result'] = function (test) {
 	test.equal(result.length, 0);
 }
 
+exports['solve two similar words no result'] = function (test) {
+	var tree = mh.tree().add(['four', 'foo']);
+	
+	var result = tree.solve(['f']);
+	
+	test.ok(result);
+	test.equal(result.length, 0);
+}
+
 exports['solve two words returning two words'] = function (test) {
 	var tree = mh.tree().add(['maps', 'spam']);
 	
